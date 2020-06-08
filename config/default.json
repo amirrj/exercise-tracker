@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://amirj:Heskey14@cluster0-clczw.mongodb.net/tracker?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://amirj:Heskey14@cluster0-clczw.mongodb.net/tracker?retryWrites=true&w=majority",
+  "jwt_secret": "exercise-tracker-secret"
 }

@@ -2,14 +2,14 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 
-const validateRegister = require('../../validation/registerUser');
+const registerUserValidation = require('../../validation/registerUser');
 const User = require('../../models/User');
 
 // @route POST /api/users
 // @desc register a new user
 // @access public
 router.post('/', (req, res) => {
-  const { errors, isValid } = validateRegister(req.body);
+  const { errors, isValid } = registerUserValidation(req.body);
 
   if (!isValid) {
     return res.status(401).json(errors);
@@ -46,3 +46,5 @@ router.post('/', (req, res) => {
     });
   });
 });
+
+module.exports = router;

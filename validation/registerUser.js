@@ -32,7 +32,7 @@ const registerUserValidation = (data) => {
 
   if (isEmpty(data.confirmPassword)) {
     errors.confirmPassword = 'Please enter a password';
-  } else if (!validate.equals(data.confirmPassword, password)) {
+  } else if (!validate.equals(data.confirmPassword, data.password)) {
     errors.confirmPassword = 'Passwords do not match';
   }
 

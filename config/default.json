@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://amirj:Heskey14@cluster0-clczw.mongodb.net/tracker?retryWrites=true&w=majority"
+}

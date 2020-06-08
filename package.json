@@ -1,0 +1,27 @@
+{
+  "name": "exercise-tracker",
+  "version": "1.0.0",
+  "description": "An application that helps you set fitness goals and tracks your favourite exercises",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrenly \"npm run server\" \"npm start --prefix client\" "
+  },
+  "author": "amir javed",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "concurrently": "^5.2.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.17",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
